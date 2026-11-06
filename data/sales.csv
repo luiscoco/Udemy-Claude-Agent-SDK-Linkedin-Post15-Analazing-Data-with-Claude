@@ -1,0 +1,8 @@
+transaction_id,customer,product,category,revenue
+S001,"Acme, Inc.",Mouse,Accessories,200
+S002,Beta,Mouse,Accessories,100
+S003,Gamma,Keyboard,Accessories,300
+S004,Delta,Monitor,Electronics,500
+S005,Epsilon,Headphones,Accessories,
+S006,Zeta,Webcam,Electronics,invalid
+S001,"Acme, Inc.",Mouse,Accessories,200

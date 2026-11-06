@@ -1,0 +1,117 @@
+# Independent Python reference report
+
+Computed locally with Python; this is not Claude output.
+
+Valid transactions: 4 of 7; excluded: 3.
+Total revenue: USD 1100.00.
+Mean revenue per valid transaction: USD 275.00.
+
+| Product | Revenue (USD) |
+| --- | ---: |
+| Monitor | 500.00 |
+| Keyboard | 300.00 |
+| Mouse | 300.00 |
+
+The complete calculations, exclusions, JSON value states, and monthly changes follow.
+
+```json
+{
+  "sales": {
+    "currency": "USD",
+    "input_records": 7,
+    "valid_records": 4,
+    "excluded_records": 3,
+    "issues": [
+      {
+        "record": 5,
+        "reason": "missing revenue"
+      },
+      {
+        "record": 6,
+        "reason": "invalid revenue"
+      },
+      {
+        "record": 7,
+        "reason": "duplicate transaction_id"
+      }
+    ],
+    "total_revenue": "1100.00",
+    "mean_revenue_per_valid_transaction": "275.00",
+    "minimum_transaction_revenue": "100.00",
+    "maximum_transaction_revenue": "500.00",
+    "products": [
+      {
+        "product": "Monitor",
+        "revenue": "500.00"
+      },
+      {
+        "product": "Keyboard",
+        "revenue": "300.00"
+      },
+      {
+        "product": "Mouse",
+        "revenue": "300.00"
+      }
+    ],
+    "top_two_exact": [
+      "Monitor",
+      "Keyboard"
+    ],
+    "top_two_including_ties": [
+      "Monitor",
+      "Keyboard",
+      "Mouse"
+    ],
+    "categories": [
+      {
+        "category": "Accessories",
+        "revenue": "600.00",
+        "share_percent": "54.5"
+      },
+      {
+        "category": "Electronics",
+        "revenue": "500.00",
+        "share_percent": "45.5"
+      }
+    ]
+  },
+  "orders": [
+    {
+      "id": 101,
+      "status": "paid",
+      "total_state": "value",
+      "total": 40
+    },
+    {
+      "id": 102,
+      "status": "pending",
+      "total_state": "null",
+      "total": null
+    },
+    {
+      "id": 103,
+      "status": "pending",
+      "total_state": "missing",
+      "total": null
+    }
+  ],
+  "monthly_changes": [
+    {
+      "from": "2026-01",
+      "to": "2026-02",
+      "percent_change": "50.0"
+    },
+    {
+      "from": "2026-02",
+      "to": "2026-03",
+      "percent_change": "-20.0"
+    }
+  ],
+  "limitations": [
+    "The three fixtures are independent; do not join or reconcile their totals.",
+    "A missing or null value is not zero.",
+    "Three monthly points do not establish seasonality or explain causation.",
+    "Revenue does not establish profit."
+  ]
+}
+```

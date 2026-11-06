@@ -1,0 +1,8 @@
+{
+  "store": "North",
+  "orders": [
+    {"id": 101, "status": "paid", "total": 40},
+    {"id": 102, "status": "pending", "total": null},
+    {"id": 103, "status": "pending"}
+  ]
+}
